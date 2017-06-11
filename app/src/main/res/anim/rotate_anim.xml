@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:interpolator="@android:anim/linear_interpolator">
+
+    <rotate
+        android:duration="120"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:toDegrees="20" />
+    <rotate
+        android:duration="240"
+        android:fromDegrees="20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="120"
+        android:toDegrees="-20" />
+    <rotate
+        android:duration="120"
+        android:fromDegrees="-20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="360"
+        android:toDegrees="0" />
+    <rotate
+        android:duration="120"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="480"
+        android:toDegrees="20" />
+    <rotate
+        android:duration="240"
+        android:fromDegrees="20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="600"
+        android:toDegrees="-20" />
+    <rotate
+        android:duration="120"
+        android:fromDegrees="-20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="840"
+        android:toDegrees="0" />
+    <rotate
+        android:duration="120"
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="960"
+        android:toDegrees="20" />
+    <rotate
+        android:duration="240"
+        android:fromDegrees="20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="1080"
+        android:toDegrees="-20" />
+    <rotate
+        android:duration="120"
+        android:fromDegrees="-20"
+        android:pivotX="50%"
+        android:pivotY="80%"
+        android:startOffset="1320"
+        android:toDegrees="0" />
+</set>

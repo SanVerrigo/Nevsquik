@@ -20,7 +20,6 @@ public class TextSpeecher {
                 if(status != TextToSpeech.ERROR) {
                     Locale locale = new Locale("ru");
                     textToSpeech.setLanguage(locale);
-//                    textToSpeech.setLanguage(Locale.UK);
                 }
             }
         });

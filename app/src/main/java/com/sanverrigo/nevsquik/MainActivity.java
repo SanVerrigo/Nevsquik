@@ -9,6 +9,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
             chosenImageInd = savedInstanceState.getInt(STATE_IMAGE);
             chosenQuoteInd = savedInstanceState.getInt(STATE_QUOTE);
             updateImageAndQuote();
+        } else {
+            generateNewQuote();
         }
     }
 
@@ -94,8 +98,10 @@ public class MainActivity extends AppCompatActivity {
             chosenQuoteInd = (chosenQuoteInd + randQuote) % quotes.length;
         }
         String quote = quotes[chosenQuoteInd];
-        textSpeecher.speak(quote);
         updateImageAndQuote();
+        final Animation rotateAnimation = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
+        imageFace.startAnimation(rotateAnimation);
+        textSpeecher.speak(quote);
     }
 
     private void updateImageAndQuote() {
